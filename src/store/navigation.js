@@ -1,5 +1,5 @@
 
- import {commonUse,chooseApp,ssoSystem} from "../api/nav.js"
+ import {commonUse,chooseApp,wwwSystem} from "../api/nav.js"
  import {personInfo} from "../api/it"
 let navigation = {
     state:{
@@ -33,9 +33,9 @@ let navigation = {
                 }
              })
          },
-         //获取sso系统列表
-         getSSOlist(store){
-            ssoSystem().then(res => {
+         //获取www系统列表
+         getwwwlist(store){
+            wwwSystem().then(res => {
                 const data = res.data
                 if(data.success==true && data.data){
                     store.commit("getsystemList",data.data)

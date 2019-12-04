@@ -87,7 +87,7 @@
           </a>
           <!-- <div class="item" v-for="n in 4" :key="n">
             <div class="txt_left">
-              <span class="notice_tit">[ 发版公告 ] SSO 临时发版公告</span>
+              <span class="notice_tit">[ 发版公告 ] www 临时发版公告</span>
             </div>
             <span class="date_right">2019-02-20</span>
           </div> -->

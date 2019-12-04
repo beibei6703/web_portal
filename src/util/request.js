@@ -4,7 +4,7 @@ import axios from 'axios'
 import utils from './utils.js'
 import qs from "qs"
 const service = axios.create({
-  baseURL: window.location.href.split('.')[1] !== undefined ? `//sso.${window.location.href.split('.')[1]}.com/ssoadmin/` : '//api.yunjiittest.com/ssoadmin/'//it正式
+  baseURL: window.location.href.split('.')[1] !== undefined ? `//www.${window.location.href.split('.')[1]}.com/wwwadmin/` : '//api.yunjiittest.com/wwwadmin/'//it正式
 })
 
 

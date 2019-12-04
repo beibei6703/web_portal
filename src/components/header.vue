@@ -48,11 +48,11 @@
           </div>
         </div>
         <div class="confimLogin" v-if="Isconfirm"  @mouseover='clearTimer' @mouseleave='Isconfirm=false'>
-          <a class="itemsLogin margin_10" href="http://sso.api.com/#/editpsd">
+          <a class="itemsLogin margin_10" href="http://www.api.com/#/editpsd">
             <img src="../assets/image/changepsw.png" alt>
             <span>修改密码</span>
           </a>
-          <a class="itemsLogin" href="//sso.api.com/logout">
+          <a class="itemsLogin" href="//www.api.com/logout">
             <img src="../assets/image/logout.png" alt>
             <span>退出登录</span>
           </a>
@@ -111,10 +111,10 @@ export default {
   },
   created() {
     this.$store.dispatch("getpeoInfo", this.getCookie("username"));
-    ISlogin(this.getCookie("JESSIONID")).then(res => {
+    ISlogin(this.getCookie("token")).then(res => {
       const data = res.data;
       if (data.code == 0) {
-        // window.location.href ="http://sso.api.com/#/" @todo
+        // window.location.href ="http://www.api.com/#/" @todo
       }
     });
   },

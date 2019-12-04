@@ -10,7 +10,7 @@
     <div class="diaContainer" v-if="showdialog">
       <div class="confirm">
         <div class="cons">
-          <span class="comInfo">为保证账户安全，请输入SSO密码验证</span>
+          <span class="comInfo">为保证账户安全，请输入www密码验证</span>
           <div class="bottomInput">
             <input type="password" placeholder="请输入密码" v-model="psw">
             <span class="bgspan" @click="getcomfirm">确定</span>
@@ -21,7 +21,7 @@
      <div class="diaContainer" v-if="showdialog1">
       <div class="confirm">
         <div class="cons">
-          <span class="comInfo">为保证账户安全，请输入SSO密码验证</span>
+          <span class="comInfo">为保证账户安全，请输入www密码验证</span>
           <div class="bottomInput">
             <input type="password" placeholder="请输入密码" v-model="psw">
             <span class="bgspan" @click="getcomfirm1">确定</span>
@@ -82,7 +82,7 @@ export default {
           });
         } else if (this.officeList[index].app_name == "Talefull人事") {
             if(this.getCookie("ecology_p")){
-                  window.open("http://sso.api.com/userInfo/talefull")
+                  window.open("http://www.api.com/userInfo/talefull")
             }else{
                 this.showdialog = true
             }
@@ -115,7 +115,7 @@ export default {
                     this.showdialog1=false
 										 window.open("http://wiki.api.com/")
                 }else{
-                	 this.$message.error('请填写正确的SSO密码');
+                	 this.$message.error('请填写正确的www密码');
                 }
             })
 
@@ -136,9 +136,9 @@ export default {
                 if(data.code==1){
                     this.setCookie("ecology_p",psd)
                     this.showdialog=false
-                     window.open("http://sso.api.com/userInfo/talefull")
+                     window.open("http://www.api.com/userInfo/talefull")
                 }else{
-                	 this.$message.error('请填写正确的SSO密码');
+                	 this.$message.error('请填写正确的www密码');
                 }
             })
 

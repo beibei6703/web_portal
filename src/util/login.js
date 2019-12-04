@@ -4,9 +4,9 @@ import axios from 'axios'
 import utils from './utils.js'
 import qs from "qs"
 const service = axios.create({
-  // baseURL: "http://sso.api.com",//it
-  // baseURL:`//sso.${window.location.href.split('.')[1]}.com`,//it
-  baseURL: window.location.href.split('.')[1] !== undefined ? `//sso.${window.location.href.split('.')[1]}.com` : '//sso.yunjiittest.com'
+  // baseURL: "http://www.api.com",//it
+  // baseURL:`//www.${window.location.href.split('.')[1]}.com`,//it
+  baseURL: window.location.href.split('.')[1] !== undefined ? `//www.${window.location.href.split('.')[1]}.com` : '//www.yunjiittest.com'
   // baseURL: "http://10.1.0.76:9995",
   // baseURL: "http://10.1.0.86:9989",//公告?
 })

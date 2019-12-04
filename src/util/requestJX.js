@@ -4,7 +4,7 @@ import axios from 'axios'
 import utils from './utils.js'
 import qs from "qs"
 const service = axios.create({
-  baseURL: "http://sso.api.com/",//sso正式
+  baseURL: "http://www.api.com/",//www正式
 })
 
 

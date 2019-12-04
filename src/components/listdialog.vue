@@ -98,7 +98,7 @@
 </template>
 <script>
 import {
-  ssoSystem,
+  wwwSystem,
   chooseApp,
   addIcon,
   businessApp,
@@ -133,7 +133,7 @@ export default {
     // getlistId() {
     //   return this.$store.state.navigation.listId;
     // },
-    // getssoList() {
+    // getwwwList() {
     //   return this.$store.state.navigation.systemList;
     // }
   },
@@ -156,8 +156,8 @@ export default {
       }
     });
     // this.$store.dispatch("getchooseApp", msg);
-    //获取sso系统列表
-    // this.$store.dispatch("getSSOlist");
+    //获取www系统列表
+    // this.$store.dispatch("getwwwlist");
     //业务系统列表
     businessApp().then(res => {
       const data = res.data;

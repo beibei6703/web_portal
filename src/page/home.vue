@@ -26,7 +26,7 @@ export default {
         }
     },
     created(){
-        console.log(this.getCookie('JESSIONID'),"getCookie('JESSIONID')")
+        console.log(this.getCookie('token'),"getCookie('token')")
     },
     methods:{
         skip(a){
